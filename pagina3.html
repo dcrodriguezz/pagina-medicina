@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ODS - Frenando la Malaria</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 40px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      padding: 5px 15px;
+      border-radius: 15px;
+    }
+
+    nav a.active {
+      border: 1px solid #00bfa5;
+    }
+
+ 
+    .hero {
+      background: linear-gradient(to right, #0099cc, #38C9CE);
+      color: white;
+      padding: 40px 60px;
+      border-radius: 10px;
+      margin: 20px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 60%;
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .hero h3 {
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      line-height: 1.6;
+    }
+
+    .hero img {
+      width: 200px;
+      margin-top: 20px;
+    }
+
+   
+    .frenando {
+      padding: 40px 20px;
+      text-align: center;
+      background: #fff;
+      border-radius: 10px;
+      margin: 20px 10px;
+    }
+
+    .frenando h3 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .frenando-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .f-card {
+      background: #38C9CE;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+   
+    .logros {
+      background: linear-gradient(to right, #0099cc, #38C9CE);
+      color: white;
+      padding: 40px 20px;
+      border-radius: 10px;
+      margin: 20px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logros-text {
+      max-width: 60%;
+    }
+
+    .logros h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .logros p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .logros img {
+      width: 150px;
+      margin-top: 10px;
+    }
+
+   
+    .footer-btns {
+      display: flex;
+      justify-content: center;
+      margin: 30px 20px;
+    }
+
+    .btn {
+      background: white;
+      border: 1px solid #38C9CE;
+      border-radius: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #333;
+      
+    }
+
+ 
+    
+
+    @media(max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-text {
+        max-width: 100%;
+      }
+      .logros {
+        flex-direction: column;
+        text-align: center;
+      }
+      .logros-text {
+        max-width: 100%;
+      }
+      .footer-btns {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 20px;
+}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="ods.png" alt="ODS Logo">
+      <h1>ODS</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">tratamiento enf 1</a>
+     <a href="#" class="active">tratamiento enf 2</a>
+      <a href="#">tratamiento enf 3</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Cómo estamos frenando la malaria</h2>
+      <h3>¿Qué es?</h3>
+      <p>La malaria es una enfermedad infecciosa causada por un parásito que se transmite a las personas a través de la picadura de mosquitos infectados.</p>
+    </div>
+    <img src="mala 1.png" alt="Malaria">
+  </section>
+
+  <section class="frenando">
+    <h3>¿Cómo lo estamos frenando?</h3>
+    <div class="frenando-cards">
+      <div class="f-card">Campañas de fumigación en zonas de alto riesgo.</div>
+      <div class="f-card">Acceso a diagnósticos rápidos y tratamientos eficaces.</div>
+      <div class="f-card">Distribución de mosquiteros tratados con insecticida.</div>
+    </div>
+  </section>
+
+  <section class="logros">
+    <div class="logros-text">
+      <h3>Lo que hemos logrado</h3>
+      <p><strong>Disminución de muertes:</strong> Se han reducido las muertes por malaria gracias a una mejor prevención y tratamiento.</p>
+      <p><strong>Más prevención:</strong> Millones de personas ahora usan mosquiteros tratados con insecticida, lo que ha evitado muchos contagios.</p>
+    </div>
+    <img src="mala2.png" alt="Logros">
+  </section>
+
+  <div class="footer-btns">
+    <button class="btn" id="btn-volver">← Volver</button>
+    
+  </div>
+  <script>
+  document.querySelectorAll('.btn').forEach(function(btn) {
+    btn.addEventListener('mouseenter', function() {
+      btn.style.background = '#38C9CE';
+      btn.style.color = 'white';
+    });
+    btn.addEventListener('mouseleave', function() {
+      btn.style.background = 'white';
+      btn.style.color = '#333';
+    });
+  });
+    document.getElementById('btn-volver').addEventListener('click', function() {
+    window.location.href = 'index.html';
+  });
+</script>
+
+</body>
+</html>

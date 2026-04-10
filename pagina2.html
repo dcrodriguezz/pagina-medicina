@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ODS - Frenando el SIDA</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 40px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      padding: 5px 15px;
+      border-radius: 15px;
+    }
+
+    nav a.active {
+      border: 1px solid #00bfa5;
+    }
+
+    
+    .hero {
+      background: linear-gradient(to right, #0099cc, #39CACF);
+      color: white;
+      padding: 40px 60px;
+      border-radius: 10px;
+      margin: 20px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 60%;
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .hero h3 {
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      line-height: 1.6;
+    }
+
+    .hero img {
+      width: 200px;
+      margin-top: 20px;
+    }
+
+    
+    .frenando {
+      padding: 40px 20px;
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: #fff;
+      border-radius: 10px;
+      margin: 20px 10px;
+    }
+
+    .frenando img {
+      width: 200px;
+      border-radius: 10px;
+      border: 2px solid #39CACF;
+    }
+
+    .frenando-text {
+      max-width: 500px;
+    }
+
+    .frenando-text h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .frenando-text p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    
+    .logros {
+      background: linear-gradient(to right, #0099cc, #39CACF);
+      color: white;
+      padding: 40px 20px;
+      border-radius: 10px;
+      margin: 20px 10px;
+      text-align: center;
+    }
+
+    .logros h3 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .logros-cards {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    
+    .footer-btns {
+      display: flex;
+      justify-content: center;
+      margin: 30px 20px;
+    }
+
+    .btn {
+      background: white;
+      border: 1px solid #00bfa5;
+      border-radius: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #333;
+      
+    }
+
+   
+    
+
+    @media(max-width: 768px) {
+      .hero {
+        text-align: center;
+        flex-direction: column;
+      }
+      .hero-text {
+        max-width: 100%;
+      }
+      .frenando {
+        flex-direction: column;
+        text-align: center;
+      }
+      .frenando-text {
+        max-width: 100%;
+      }
+      .footer-btns {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="ods.png" alt="ODS Logo">
+      <h1>ODS</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#" class="active">tratamiento enf 1</a>
+      <a href="#">tratamiento enf 2</a>
+      <a href="#">tratamiento enf 3</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Cómo estamos frenando el SIDA</h2>
+      <h3>¿Qué es?</h3>
+      <p>El SIDA (Síndrome de Inmunodeficiencia Adquirida) es una enfermedad causada por el virus del VIH (Virus de Inmunodeficiencia Humana).</p>
+    </div>
+    <img src="sid1.png" alt="VIH">
+  </section>
+
+  <section class="frenando">
+    <img src="sid2.png" alt="Doctores">
+    <div class="frenando-text">
+      <h3>¿Cómo lo estamos frenando?</h3>
+      <p>Ampliando el acceso a tratamientos antirretrovirales, que permiten a las personas con VIH vivir más tiempo y con buena salud.</p>
+      <p>Promoviendo la educación sexual y la prevención, especialmente entre los jóvenes, para reducir los contagios.</p>
+      <p>Apoyando programas de diagnóstico temprano, que ayudan a detectar el virus a tiempo y evitar su propagación.</p>
+    </div>
+  </section>
+
+  <section class="logros">
+    <h3>Lo que hemos logrado</h3>
+    <div class="logros-cards">
+      <div class="card">
+        <strong>Reducción de muertes:</strong><br>
+        Las muertes relacionadas con el SIDA han disminuido.
+      </div>
+      <div class="card">
+        <strong>Más tratamientos:</strong><br>
+        Millones de personas con VIH ahora reciben medicamentos.
+      </div>
+      <div class="card">
+        <strong>Prevención y educación:</strong><br>
+        Se han fortalecido programas de prevención, educación sexual y uso del preservativo.
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-btns">
+    <button class="btn" id="btn-volver">← Volver</button>
+    
+  </div>
+  <script>
+  document.querySelectorAll('.btn').forEach(function(btn) {
+    btn.addEventListener('mouseenter', function() {
+      btn.style.background = '#00bfa5';
+      btn.style.color = 'white';
+    });
+    btn.addEventListener('mouseleave', function() {
+      btn.style.background = 'white';
+      btn.style.color = '#333';
+    });
+  });
+    document.getElementById('btn-volver').addEventListener('click', function() {
+    window.location.href = 'index.html';
+  });
+</script>
+
+</body>
+</html>
+
+</body>
+</html>

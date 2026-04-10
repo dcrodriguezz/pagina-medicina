@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ODS - Frenando la Tuberculosis</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 40px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      padding: 5px 15px;
+      border-radius: 15px;
+    }
+
+    nav a.active {
+      border: 1px solid #00bfa5;
+    }
+
+   
+    .hero {
+      background: linear-gradient(to right, #00a7c5, #38C9CE);
+      color: white;
+      padding: 40px 60px;
+      border-radius: 10px;
+      margin: 20px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 60%;
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .hero h3 {
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .hero img {
+      width: 180px;
+      margin-top: 10px;
+    }
+
+   
+    .frenando {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 10px;
+      margin: 20px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .frenando-text {
+      max-width: 60%;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .frenando h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #00a7c5;
+    }
+
+    .frenando img {
+      width: 200px;
+      border-radius: 10px;
+    }
+
+  
+    .logros {
+      background: linear-gradient(to right, #00a7c5, #38C9CE);
+      color: white;
+      padding: 40px 30px;
+      border-radius: 10px;
+      margin: 20px 10px;
+    }
+
+    .logros h3 {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+
+    .logros-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .l-card {
+      background: white;
+      color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      width: 230px;
+      text-align: center;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    
+    .footer-btn {
+      display: flex;
+      justify-content: center;
+      margin: 30px;
+    }
+
+    .btn {
+      background: white;
+      border: 1px solid #00bfa5;
+      border-radius: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #333;
+    
+    }
+
+    
+
+    @media(max-width: 768px) {
+      .hero, .frenando {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-text, .frenando-text {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="ods.png" alt="ODS Logo">
+      <h1>ODS</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">tratamiento enf 1</a>
+      <a href="#">tratamiento enf 2</a>
+      <a href="#" class="active">tratamiento enf 3</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Cómo estamos frenando la tuberculosis</h2>
+      <h3>¿Qué es?</h3>
+      <p>La tuberculosis es una enfermedad infecciosa causada por una bacteria llamada <em>Mycobacterium tuberculosis</em>, que afecta principalmente los pulmones, aunque también puede dañar otras partes del cuerpo.</p>
+      <p>Se transmite por el aire, cuando una persona enferma tose, estornuda o habla, liberando las bacterias.</p>
+    </div>
+    <img src="tuber2.png" alt="Tuberculosis">
+  </section>
+
+  <section class="frenando">
+    <div class="frenando-text">
+      <h3>¿Cómo lo estamos frenando?</h3>
+      <p>Acceso a diagnóstico y tratamiento gratuito, para que más personas puedan curarse sin importar su condición económica.</p>
+      <p>Campañas de detección temprana, que permiten identificar los casos antes de que la enfermedad se propague.</p>
+    </div>
+    <img src="tuber1.png" alt="Equipo médico">
+  </section>
+
+  <section class="logros">
+    <h3>Lo que hemos logrado</h3>
+    <div class="logros-cards">
+      <div class="l-card">Reducción de muertes. Las tasas han disminuido durante los últimos años.</div>
+      <div class="l-card">Tratamiento gratuito y acceso para las personas más necesitadas.</div>
+      <div class="l-card">Detección temprana. Se han reducido los casos graves por programas de salud.</div>
+    </div>
+  </section>
+
+  <div class="footer-btn">
+    <button class="btn" id="btn-volver">← Volver</button>
+  </div>
+  <script>
+  document.querySelectorAll('.btn').forEach(function(btn) {
+    btn.addEventListener('mouseenter', function() {
+      btn.style.background = '#00bfa5';
+      btn.style.color = 'white';
+    });
+    btn.addEventListener('mouseleave', function() {
+      btn.style.background = 'white';
+      btn.style.color = '#333';
+    });
+  });
+    document.getElementById('btn-volver').addEventListener('click', function() {
+    window.location.href = 'index.html';
+  });
+</script>
+
+</body>
+</html>
